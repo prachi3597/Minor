@@ -8,11 +8,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
-
+    Databasehelper myDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myDb = new Databasehelper(this);
         //Setting time of display:
         new Timer().schedule(new TimerTask() {
 
