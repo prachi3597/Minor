@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Minor</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="domhelp">DomHelp</string>
+    <string name="todo">TODO</string>
+    <string name="skip">SKIP</string>
+</resources>
