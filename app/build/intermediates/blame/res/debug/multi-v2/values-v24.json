@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Minor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\fdb171e27945946cb1bd843e26d610f8\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\5ce1c3076007974217e5cb1869fa3085\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c6c0d751c9598a003bcb185c274a4f29\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\00734a94b85ab821f724830f12ab7553\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

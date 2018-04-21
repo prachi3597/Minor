@@ -1,9 +1,46 @@
 <resources>
     <string name="app_name">Minor</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="domhelp">DomHelp</string>
     <string name="todo">TODO</string>
     <string name="skip">SKIP</string>
+    <string name="address">Address</string>
+    <string name="profession">Profession</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="next">NEXT</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+    <string name="female">Female</string>
+    <string name="utro"><i><u>Resend OTP?</u></i></string>
+    <string name="utcn"><i><u>Change Mobile Number</u></i></string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="nexteo">Next</string>
+
+
+    <string name="uid_must_be_atleast_10_characters_in_length">*UID must be atleast 10 characters in length</string>
+    <string name="Continue">Continue</string>
+    <string name="set_unique_id">Set Unique Id</string>
+    <string name="uid_must_be_at_least_10_characters_in_length">sentenc</string>
+    <string name="title_home">title_home</string>
+    <string name="title_dashboard">title_dashboard</string>
+    <string name="title_notifications">title_notifications</string>
+    <string name="invalid_credentials">Sorry!Invalid credentials.</string>
+    <string name="sms_quota_exceeded">Sorry!SMS quota exceeded :(</string>
+    <string name="try_again">Try Again!</string>
+    <string name="main_layout">Main Layout</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="enter_mobile_no">Enter Mobile Number</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="resend">Resend</string>
+    <string name="verify">Verify</string>
+    <string name="Enter_otp">Enter OTP</string>
+    <string name="name">Name</string>
+    <string name="enter_your_uid">Enter Your UID</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+
+
 </resources>

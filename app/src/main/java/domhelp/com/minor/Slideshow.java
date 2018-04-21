@@ -9,32 +9,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.PhoneAuthProvider;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
 import me.relex.circleindicator.CircleIndicator;
 
+
 public class Slideshow extends AppCompatActivity {
-
-    Button btnSkip;
-    public int status=0;
-
-
-    ViewPager viewPager;
-    int[] img;
     private static int currentPage=0;
     private static int numPages=0;
+    ViewPager viewPager;
+    int[] img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+
+        Button btnSkip;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slideshow);
 
         img=new int[]{
-                R.drawable.os_cook,R.drawable.os_babysitter,R.drawable.os_gardener,R.drawable.os_gardener
-        };
-        viewPager=(ViewPager)findViewById(R.id.viewPager);
+                R.drawable.os_cook,R.drawable.os_babysitter,R.drawable.os_gardener,R.drawable.os_gardener};
+        viewPager=findViewById(R.id.viewPager);
         ViewPagerAdapter viewPagerAdapter=new ViewPagerAdapter(this);
         viewPager.setAdapter(viewPagerAdapter);
         btnSkip=findViewById(R.id.btnSkip);
@@ -42,30 +42,14 @@ public class Slideshow extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Skip to new Activity:
-                switch (status){
-                    case 0:{
-                        Intent intent=new Intent(getApplicationContext(),EnterMobileNumber.class);
-                        startActivity(intent);
-                    }
-                    break;
-                    case 1:{
-                        Intent intent=new Intent(getApplicationContext(),Dashboard.class);
-                        startActivity(intent);
-                    }
-                    break;
-                    case -1:{
-                        Intent intent=new Intent(getApplicationContext(),EnterUID.class);
-                        startActivity(intent);
-                    }
-                }
 
-                //Enter last status in Toast :
-                Toast.makeText(Slideshow.this, "You're not Registered! Sign Up->", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(getApplicationContext(),PhoneAuthActivity.class);
+                startActivity(intent);
             }
         });
-        CircleIndicator indicator=(CircleIndicator)findViewById(R.id.indicator);
+        CircleIndicator indicator=findViewById(R.id.indicator);
         indicator.setViewPager(viewPager);
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -79,12 +63,12 @@ public class Slideshow extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {
                 if(state==ViewPager.SCROLL_STATE_IDLE){
-                    int pagecount= img.length ;
+                    int page_count= img.length ;
                     if(currentPage==0){
-                        viewPager.setCurrentItem(pagecount-1,false);
+                        viewPager.setCurrentItem(page_count-1,false);
 
                     }
-                    else if(currentPage==pagecount-1){
+                    else if(currentPage==page_count-1){
                         viewPager.setCurrentItem(0,false);
                     }
                 }
@@ -114,7 +98,9 @@ public class Slideshow extends AppCompatActivity {
             }
         },1000,1000);
 
-
+        
 
     }
+
+
 }

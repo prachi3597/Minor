@@ -1,7 +1,6 @@
 package domhelp.com.minor;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -10,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class ViewPagerAdapter extends PagerAdapter {
+    class ViewPagerAdapter extends PagerAdapter {
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer[] images={R.drawable.os_gardener,R.drawable.os_babysitter,R.drawable.os_cook};
+    private Integer[] images={R.drawable.os_gardener,R.drawable.os_babysitter,R.drawable.os_cook,R.drawable.os_gardener};
 
     public ViewPagerAdapter(Context context) {
         this.context = context;
@@ -35,9 +34,10 @@ public class ViewPagerAdapter extends PagerAdapter {
 
         layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View view=layoutInflater.inflate(R.layout.custom_layout,null);
 
-        ImageView imageView=(ImageView)view.findViewById(R.id.imageView);
+        View view = layoutInflater.inflate(R.layout.custom_layout, container , false);
+
+        ImageView imageView=view.findViewById(R.id.imageView);
         imageView.setImageResource(images[position]);
         ViewPager vp=(ViewPager)container;
         vp.addView(view,0);

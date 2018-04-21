@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Minor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c6c0d751c9598a003bcb185c274a4f29\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\prachi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\00734a94b85ab821f724830f12ab7553\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
